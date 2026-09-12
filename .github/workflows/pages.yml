@@ -11,26 +11,64 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
-    # Publie uniquement la branche par défaut du dépôt.
-    if: github.event_name == 'workflow_dispatch' || github.ref_name == github.event.repository.default_branch
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      # La racine du site publié vient toujours de la branche par défaut :
+      # pousser sur une branche de travail ne peut donc pas casser le site live.
+      - name: Récupère la branche par défaut (racine du site)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          path: _site
+
+      - name: Récupère la branche poussée (preview)
+        if: github.ref_name != github.event.repository.default_branch
+        uses: actions/checkout@v4
+        with:
+          path: _preview
+
+      - name: Installe la preview dans /preview/<branche>/
+        id: preview
+        if: github.ref_name != github.event.repository.default_branch
+        run: |
+          slug=$(printf '%s' "${{ github.ref_name }}" | tr '[:upper:]' '[:lower:]' | tr -c 'a-z0-9' '-' | sed 's/-\+/-/g; s/^-//; s/-$//')
+          rm -rf "_preview/.git"
+          mkdir -p "_site/preview/$slug"
+          cp -a _preview/. "_site/preview/$slug/"
+          echo "slug=$slug" >> "$GITHUB_OUTPUT"
+          echo "Preview de \`${{ github.ref_name }}\` : /preview/$slug/" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Nettoie l'arborescence à publier
+        run: rm -rf _site/.git
+
       - uses: actions/configure-pages@v5
         with:
           # Active GitHub Pages (source « GitHub Actions ») si ce n'est pas déjà fait.
           enablement: true
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
+
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Récapitulatif
+        run: |
+          url="${{ steps.deployment.outputs.page_url }}"
+          if [ -n "${{ steps.preview.outputs.slug }}" ]; then
+            echo "### Preview en ligne" >> "$GITHUB_STEP_SUMMARY"
+            echo "${url}preview/${{ steps.preview.outputs.slug }}/" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "### Site publié" >> "$GITHUB_STEP_SUMMARY"
+            echo "$url" >> "$GITHUB_STEP_SUMMARY"
+          fi
