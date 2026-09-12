@@ -71,20 +71,22 @@
     est mis en évidence automatiquement.</p>
 
     <h2>Publication</h2>
-    <p>À chaque <em>push</em> sur la branche par défaut, GitHub Actions dépose le contenu du dépôt
-    sur GitHub Pages. Une seule manipulation manuelle au départ :
-    <strong>Settings › Pages › Source › GitHub Actions</strong> — le jeton des workflows n'a pas le
-    droit de créer le site lui-même. Le fichier <code>.nojekyll</code> évite que Jekyll ne retraite
+    <p>Un push ne met rien en ligne. La publication se déclenche à la main, depuis
+    <strong>Actions › Deploy to GitHub Pages › Run workflow</strong> : commiter et publier
+    sont deux gestes séparés. Le fichier <code>.nojekyll</code> évite que Jekyll ne retraite
     les fichiers au passage.</p>
+    <p>Une seule manipulation a été nécessaire au départ :
+    <strong>Settings › Pages › Source › GitHub Actions</strong> — le jeton des workflows n'a pas
+    le droit de créer le site lui-même.</p>
 
     <h2>Prévisualiser avant de publier</h2>
-    <p>Le même workflow publie aussi les branches de travail, mais dans un sous-dossier :
-    un push sur la branche par défaut met à jour le site à la racine, un push sur n'importe
-    quelle autre branche apparaît sur <code>/preview/&lt;nom-de-la-branche&gt;/</code>.</p>
+    <p>Le menu <em>Run workflow</em> permet de choisir la branche à publier. Lancer la branche
+    par défaut met à jour le site à la racine ; lancer n'importe quelle autre branche la publie
+    sur <code>/preview/&lt;nom-de-la-branche&gt;/</code>, la racine restant inchangée.</p>
     <p>Depuis un téléphone : éditer un fichier, choisir <em>Create a new branch</em> au moment de
-    valider, ouvrir la preview une vingtaine de secondes plus tard, puis fusionner la branche
-    quand le résultat convient. La racine du site est toujours reconstruite depuis la branche
-    par défaut : une preview ne peut pas abîmer le site en ligne.</p>
+    valider, lancer le workflow sur cette branche, puis la fusionner quand le résultat convient.
+    La racine du site est toujours reconstruite depuis la branche par défaut : une preview ne
+    peut pas abîmer le site en ligne.</p>
 
     <h2>Accessibilité et performance</h2>
     <ul>

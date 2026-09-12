@@ -1,7 +1,9 @@
 name: Deploy to GitHub Pages
 
+# Rien ne part tout seul : la publication se déclenche uniquement à la demande,
+# depuis Actions › Deploy to GitHub Pages › Run workflow (le menu permet de
+# choisir la branche à publier).
 on:
-  push:
   workflow_dispatch:
 
 permissions:
