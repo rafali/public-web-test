@@ -71,9 +71,11 @@
     est mis en évidence automatiquement.</p>
 
     <h2>Publication</h2>
-    <p>À chaque <em>push</em>, GitHub Actions dépose le contenu du dépôt sur GitHub Pages.
-    Il faut l'activer une fois : <strong>Settings › Pages › Source › GitHub Actions</strong>.
-    Le fichier <code>.nojekyll</code> évite que Jekyll ne retraite les fichiers au passage.</p>
+    <p>À chaque <em>push</em> sur la branche par défaut, GitHub Actions dépose le contenu du dépôt
+    sur GitHub Pages. Une seule manipulation manuelle au départ :
+    <strong>Settings › Pages › Source › GitHub Actions</strong> — le jeton des workflows n'a pas le
+    droit de créer le site lui-même. Le fichier <code>.nojekyll</code> évite que Jekyll ne retraite
+    les fichiers au passage.</p>
 
     <h2>Accessibilité et performance</h2>
     <ul>
