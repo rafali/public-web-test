@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galerie — Carnet de poche</title>
+<meta name="description" content="Six illustrations SVG générées pour le site, en grille responsive.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Galerie — Carnet de poche">
+<meta property="og:description" content="Six illustrations SVG générées pour le site, en grille responsive.">
+<meta property="og:image" content="assets/img/vue-01.svg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-bar">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.svg" alt="" width="30" height="30">
+        <span>Carnet de poche</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </button>
+    </div>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+      <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="galerie.html" aria-current="page">Galerie</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Galerie</h1>
+    <p class="lead">Six variations sur le même motif : un ciel en dégradé, un astre, quatre lignes de relief.
+    Ce sont des SVG — quelques kilo-octets chacun, nets à n'importe quelle taille.</p>
+
+    <div class="grid cols-2">
+      <figure>
+        <img src="assets/img/vue-01.svg" alt="Illustration « Aube » : Un soleil bas, quatre crêtes successives. Le dégradé de fond" width="1200" height="800" loading="lazy">
+        <figcaption><strong>Aube.</strong> Un soleil bas, quatre crêtes successives. Le dégradé de fond donne la profondeur.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/vue-02.svg" alt="Illustration « Forêt » : Palette verte. Les couches les plus proches sont les plus so" width="1200" height="800" loading="lazy">
+        <figcaption><strong>Forêt.</strong> Palette verte. Les couches les plus proches sont les plus sombres.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/vue-03.svg" alt="Illustration « Désert » : Tons chauds et lumière rasante : la même construction, une a" width="1200" height="800" loading="lazy">
+        <figcaption><strong>Désert.</strong> Tons chauds et lumière rasante : la même construction, une autre ambiance.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/vue-04.svg" alt="Illustration « Nuit » : Ciel bleu nuit piqué d'étoiles, lune pleine, relief presque " width="1200" height="800" loading="lazy">
+        <figcaption><strong>Nuit.</strong> Ciel bleu nuit piqué d'étoiles, lune pleine, relief presque noir.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/vue-05.svg" alt="Illustration « Lagune » : Turquoise et bleu profond, l'horizon remonte dans le cadre" width="1200" height="800" loading="lazy">
+        <figcaption><strong>Lagune.</strong> Turquoise et bleu profond, l'horizon remonte dans le cadre.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/vue-06.svg" alt="Illustration « Cendre » : Gris froids et halo crème, le contraste le plus doux de la s" width="1200" height="800" loading="lazy">
+        <figcaption><strong>Cendre.</strong> Gris froids et halo crème, le contraste le plus doux de la série.</figcaption>
+      </figure>
+    </div>
+
+    <h2>Pourquoi du SVG</h2>
+    <p>Une photo de 2 Mo met du temps à charger en 4G et pèse dans le dépôt. Ces illustrations font
+    environ 6 ko, restent parfaites sur un écran de téléphone comme en plein écran, et se modifient
+    dans un éditeur de texte. Les images hors du premier écran sont chargées en différé
+    (<code>loading="lazy"</code>).</p>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Carnet de poche — site statique publié avec GitHub Pages.</p>
+    <p><a href="https://github.com/rafali/public-web-test">Code source sur GitHub</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/nav.js"></script>
+</body>
+</html>

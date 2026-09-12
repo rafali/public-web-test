@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accueil — Carnet de poche</title>
+<meta name="description" content="Un petit site statique avec navigation et images, écrit et publié entièrement depuis un téléphone.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Accueil — Carnet de poche">
+<meta property="og:description" content="Un petit site statique avec navigation et images, écrit et publié entièrement depuis un téléphone.">
+<meta property="og:image" content="assets/img/vue-01.svg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-bar">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.svg" alt="" width="30" height="30">
+        <span>Carnet de poche</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </button>
+    </div>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+      <ul>
+          <li><a href="index.html" aria-current="page">Accueil</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="hero">
+      <span class="pill">Expérience en cours</span>
+      <h1>Tout faire depuis un téléphone</h1>
+      <p class="lead">Ce site est un banc d'essai : construire, modifier et publier un vrai site web
+      sans jamais ouvrir un ordinateur. Navigation, images, mise en page — tout doit tenir dans la main.</p>
+      <img src="assets/img/vue-01.svg" alt="Illustration abstraite : un soleil bas au-dessus de collines superposées" width="1200" height="800">
+      <div class="actions">
+        <a class="btn" href="galerie.html">Voir la galerie</a>
+        <a class="btn ghost" href="journal.html">Lire le journal</a>
+      </div>
+    </section>
+
+    <h2>Ce qu'il y a à voir</h2>
+    <div class="grid cols-3">
+      <article class="card">
+        <img src="assets/img/vue-02.svg" alt="Illustration abstraite aux tons verts" width="1200" height="800">
+        <div class="body">
+          <h3>Galerie</h3>
+          <p>Six illustrations, affichées en une colonne sur téléphone et en grille sur grand écran.</p>
+          <p><a href="galerie.html">Ouvrir la galerie →</a></p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/img/vue-03.svg" alt="Illustration abstraite aux tons chauds" width="1200" height="800">
+        <div class="body">
+          <h3>Journal</h3>
+          <p>Les étapes du chantier, dans l'ordre, avec ce qui marche et ce qui coince.</p>
+          <p><a href="journal.html">Lire le journal →</a></p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/img/vue-04.svg" alt="Illustration abstraite bleu nuit" width="1200" height="800">
+        <div class="body">
+          <h3>À propos</h3>
+          <p>Comment le site est fait, comment le modifier et comment le publier.</p>
+          <p><a href="a-propos.html">En savoir plus →</a></p>
+        </div>
+      </article>
+    </div>
+
+    <h2>Les règles du jeu</h2>
+    <div class="note">
+      <p><strong>Pas d'outil de build.</strong> Du HTML, une feuille de style, quelques lignes de JavaScript.
+      Un fichier modifié est un site modifié.</p>
+      <p><strong>Pas de dépendance externe.</strong> Les images sont des SVG dans le dépôt : rien à charger ailleurs,
+      et ça reste net sur les écrans haute densité.</p>
+      <p class="muted">Tout se lit à une main, en mode portrait.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Carnet de poche — site statique publié avec GitHub Pages.</p>
+    <p><a href="https://github.com/rafali/public-web-test">Code source sur GitHub</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>À propos — Carnet de poche</title>
+<meta name="description" content="Comment ce site est construit, comment le modifier et comment il est publié.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="À propos — Carnet de poche">
+<meta property="og:description" content="Comment ce site est construit, comment le modifier et comment il est publié.">
+<meta property="og:image" content="assets/img/vue-01.svg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-bar">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.svg" alt="" width="30" height="30">
+        <span>Carnet de poche</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </button>
+    </div>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+      <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="a-propos.html" aria-current="page">À propos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>À propos</h1>
+    <p class="lead">Un site statique de quelques fichiers, hébergé par GitHub Pages. Pas de serveur,
+    pas de base de données, pas d'étape de compilation.</p>
+
+    <h2>Les fichiers</h2>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Chemin</th><th>Rôle</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>index.html</code></td><td>Page d'accueil</td></tr>
+          <tr><td><code>galerie.html</code></td><td>Les images, en grille</td></tr>
+          <tr><td><code>journal.html</code></td><td>Le carnet de bord</td></tr>
+          <tr><td><code>a-propos.html</code></td><td>Cette page</td></tr>
+          <tr><td><code>assets/css/style.css</code></td><td>Toute la mise en forme</td></tr>
+          <tr><td><code>assets/js/nav.js</code></td><td>Menu repliable et lien actif</td></tr>
+          <tr><td><code>assets/img/</code></td><td>Illustrations SVG et logo</td></tr>
+          <tr><td><code>.github/workflows/pages.yml</code></td><td>Publication automatique</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Modifier le site</h2>
+    <p>Chaque page est un fichier HTML complet. Pour changer un texte, on ouvre le fichier, on édite,
+    on enregistre — depuis GitHub dans un navigateur mobile, l'application GitHub, ou n'importe quel
+    éditeur.</p>
+    <p>Pour ajouter une page : dupliquer un fichier existant, changer le titre et le contenu, puis
+    ajouter le lien dans le bloc <code>&lt;nav&gt;</code> des quatre pages. Le lien de la page courante
+    est mis en évidence automatiquement.</p>
+
+    <h2>Publication</h2>
+    <p>À chaque <em>push</em>, GitHub Actions dépose le contenu du dépôt sur GitHub Pages.
+    Il faut l'activer une fois : <strong>Settings › Pages › Source › GitHub Actions</strong>.
+    Le fichier <code>.nojekyll</code> évite que Jekyll ne retraite les fichiers au passage.</p>
+
+    <h2>Accessibilité et performance</h2>
+    <ul>
+      <li>Toutes les images ont un texte alternatif et des dimensions déclarées.</li>
+      <li>Les cibles tactiles font au moins 44 px de haut.</li>
+      <li>Le thème clair ou sombre suit le réglage du téléphone.</li>
+      <li>Le site entier pèse moins de 100 ko, images comprises.</li>
+    </ul>
+
+    <figure style="margin-top:24px">
+      <img src="assets/img/vue-06.svg" alt="Illustration abstraite en gris froids avec un halo crème" width="1200" height="800" loading="lazy">
+      <figcaption>« Cendre », dernière illustration de la série.</figcaption>
+    </figure>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Carnet de poche — site statique publié avec GitHub Pages.</p>
+    <p><a href="https://github.com/rafali/public-web-test">Code source sur GitHub</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/nav.js"></script>
+</body>
+</html>

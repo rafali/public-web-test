@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#062e2b"/><stop offset="100%" stop-color="#0f766e"/></linearGradient>
+<radialGradient id="glow"><stop offset="0%" stop-color="#d7f5ec" stop-opacity=".85"/><stop offset="100%" stop-color="#d7f5ec" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="800" fill="url(#sky)"/>
+<circle cx="310" cy="180" r="1" fill="#fff" opacity="0.16"/>
+<circle cx="808" cy="36" r="1" fill="#fff" opacity="0.34"/>
+<circle cx="646" cy="366" r="1" fill="#fff" opacity="0.37"/>
+<circle cx="81" cy="50" r="2" fill="#fff" opacity="0.48"/>
+<circle cx="699" cy="28" r="1" fill="#fff" opacity="0.43"/>
+<circle cx="369" cy="266" r="1" fill="#fff" opacity="0.50"/>
+<circle cx="533" cy="227" r="1" fill="#fff" opacity="0.17"/>
+<circle cx="738" cy="310" r="1" fill="#fff" opacity="0.29"/>
+<circle cx="1131" cy="96" r="1" fill="#fff" opacity="0.38"/>
+<circle cx="740" cy="216" r="1.5" fill="#fff" opacity="0.29"/>
+<circle cx="746" cy="329" r="1.5" fill="#fff" opacity="0.20"/>
+<circle cx="1118" cy="238" r="1" fill="#fff" opacity="0.22"/>
+<circle cx="912" cy="188" r="1.5" fill="#fff" opacity="0.49"/>
+<circle cx="928" cy="165" r="1.5" fill="#fff" opacity="0.25"/>
+<circle cx="1092" cy="366" r="2" fill="#fff" opacity="0.22"/>
+<circle cx="755" cy="348" r="1" fill="#fff" opacity="0.40"/>
+<circle cx="679" cy="341" r="1.5" fill="#fff" opacity="0.16"/>
+<circle cx="710" cy="13" r="1" fill="#fff" opacity="0.53"/>
+<circle cx="171" cy="277" r="1.5" fill="#fff" opacity="0.36"/>
+<circle cx="277" cy="277" r="2" fill="#fff" opacity="0.52"/>
+<circle cx="122" cy="357" r="1" fill="#fff" opacity="0.32"/>
+<circle cx="986" cy="9" r="2" fill="#fff" opacity="0.28"/>
+<circle cx="199" cy="89" r="1.5" fill="#fff" opacity="0.28"/>
+<circle cx="1080" cy="208" r="1.5" fill="#fff" opacity="0.41"/>
+<circle cx="438" cy="410" r="1" fill="#fff" opacity="0.15"/>
+<circle cx="889" cy="46" r="1" fill="#fff" opacity="0.39"/>
+<circle cx="343" cy="304" r="1" fill="#fff" opacity="0.16"/>
+<circle cx="779" cy="268" r="2" fill="#fff" opacity="0.33"/>
+<circle cx="828" cy="310" r="2" fill="#fff" opacity="0.51"/>
+<circle cx="72" cy="94" r="1.5" fill="#fff" opacity="0.20"/>
+<circle cx="755" cy="203" r="1" fill="#fff" opacity="0.38"/>
+<circle cx="965" cy="58" r="1" fill="#fff" opacity="0.31"/>
+<circle cx="692" cy="420" r="2" fill="#fff" opacity="0.26"/>
+<circle cx="891" cy="366" r="2" fill="#fff" opacity="0.13"/>
+<circle cx="1021" cy="325" r="1" fill="#fff" opacity="0.25"/>
+<circle cx="921" cy="183" r="1" fill="#fff" opacity="0.47"/>
+<circle cx="531" cy="288" r="1.5" fill="#fff" opacity="0.32"/>
+<circle cx="732" cy="43" r="2" fill="#fff" opacity="0.30"/>
+<circle cx="424" cy="14" r="2" fill="#fff" opacity="0.18"/>
+<circle cx="643" cy="212" r="2" fill="#fff" opacity="0.41"/>
+<circle cx="431" cy="257" r="1" fill="#fff" opacity="0.52"/>
+<circle cx="185" cy="141" r="2" fill="#fff" opacity="0.50"/>
+<circle cx="45" cy="124" r="1" fill="#fff" opacity="0.17"/>
+<circle cx="443" cy="342" r="1" fill="#fff" opacity="0.30"/>
+<circle cx="99" cy="410" r="2" fill="#fff" opacity="0.26"/>
+<circle cx="520" cy="383" r="2" fill="#fff" opacity="0.21"/>
+<circle cx="651" cy="333" r="2" fill="#fff" opacity="0.51"/>
+<circle cx="134" cy="237" r="1" fill="#fff" opacity="0.48"/>
+<circle cx="54" cy="382" r="1" fill="#fff" opacity="0.50"/>
+<circle cx="1173" cy="379" r="1" fill="#fff" opacity="0.17"/>
+<circle cx="632" cy="162" r="1.5" fill="#fff" opacity="0.38"/>
+<circle cx="963" cy="132" r="1" fill="#fff" opacity="0.28"/>
+<circle cx="1019" cy="166" r="2" fill="#fff" opacity="0.15"/>
+<circle cx="606" cy="131" r="1" fill="#fff" opacity="0.35"/>
+<circle cx="519" cy="153" r="1.5" fill="#fff" opacity="0.50"/>
+<circle cx="916" cy="132" r="2" fill="#fff" opacity="0.27"/>
+<circle cx="997" cy="90" r="1" fill="#fff" opacity="0.21"/>
+<circle cx="1137" cy="192" r="1" fill="#fff" opacity="0.21"/>
+<circle cx="201" cy="292" r="1.5" fill="#fff" opacity="0.53"/>
+<circle cx="185" cy="290" r="2" fill="#fff" opacity="0.47"/>
+<circle cx="810" cy="223" r="210" fill="url(#glow)"/>
+<circle cx="810" cy="223" r="70" fill="#d7f5ec"/>
+<path d="M -40,404 Q -10,404 20,268 Q 50,268 80,412 Q 110,412 140,280 Q 170,280 200,321 Q 230,321 260,399 Q 290,399 320,301 Q 350,301 380,328 Q 410,328 440,266 Q 470,266 500,410 Q 530,410 560,414 Q 590,414 620,268 Q 650,268 680,259 Q 710,259 740,322 Q 770,322 800,330 Q 830,330 860,377 Q 890,377 920,299 Q 950,299 980,343 Q 1010,343 1040,266 Q 1070,266 1100,275 Q 1130,275 1160,251 Q 1190,251 1220,335 L 1240,840 L -40,840 Z" fill="#02201d" opacity="0.82"/>
+<path d="M -40,426 Q -10,426 20,403 Q 50,403 80,495 Q 110,495 140,432 Q 170,432 200,372 Q 230,372 260,471 Q 290,471 320,370 Q 350,370 380,389 Q 410,389 440,370 Q 470,370 500,453 Q 530,453 560,485 Q 590,485 620,451 Q 650,451 680,392 Q 710,392 740,486 Q 770,486 800,490 Q 830,490 860,408 Q 890,408 920,400 Q 950,400 980,460 Q 1010,460 1040,505 Q 1070,505 1100,496 Q 1130,496 1160,491 Q 1190,491 1220,466 L 1240,840 L -40,840 Z" fill="#063b36" opacity="0.87"/>
+<path d="M -40,543 Q -10,543 20,562 Q 50,562 80,534 Q 110,534 140,596 Q 170,596 200,488 Q 230,488 260,605 Q 290,605 320,570 Q 350,570 380,582 Q 410,582 440,582 Q 470,582 500,510 Q 530,510 560,584 Q 590,584 620,564 Q 650,564 680,504 Q 710,504 740,589 Q 770,589 800,539 Q 830,539 860,573 Q 890,573 920,496 Q 950,496 980,568 Q 1010,568 1040,487 Q 1070,487 1100,494 Q 1130,494 1160,499 Q 1190,499 1220,491 L 1240,840 L -40,840 Z" fill="#0b524a" opacity="0.92"/>
+<path d="M -40,683 Q -10,683 20,672 Q 50,672 80,722 Q 110,722 140,686 Q 170,686 200,694 Q 230,694 260,696 Q 290,696 320,677 Q 350,677 380,704 Q 410,704 440,727 Q 470,727 500,652 Q 530,652 560,696 Q 590,696 620,670 Q 650,670 680,705 Q 710,705 740,702 Q 770,702 800,650 Q 830,650 860,656 Q 890,656 920,694 Q 950,694 980,723 Q 1010,723 1040,718 Q 1070,718 1100,720 Q 1130,720 1160,658 Q 1190,658 1220,678 L 1240,840 L -40,840 Z" fill="#11685e" opacity="0.97"/>
+</svg>

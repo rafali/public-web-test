@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Journal — Carnet de poche</title>
+<meta name="description" content="Le carnet de bord du chantier : ce qui a été fait, dans l'ordre.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Journal — Carnet de poche">
+<meta property="og:description" content="Le carnet de bord du chantier : ce qui a été fait, dans l'ordre.">
+<meta property="og:image" content="assets/img/vue-01.svg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-bar">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.svg" alt="" width="30" height="30">
+        <span>Carnet de poche</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </button>
+    </div>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+      <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="journal.html" aria-current="page">Journal</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Journal</h1>
+    <p class="lead">Le déroulé du chantier, du dépôt vide à la mise en ligne.</p>
+
+    <ol class="timeline">
+      <li>
+        <time>Étape 1</time>
+        <h3>Dépôt vide</h3>
+        <p>Aucun commit, aucune branche. Tout part de zéro : c'est le meilleur moment pour choisir
+        une structure simple qu'on pourra encore comprendre dans six mois.</p>
+      </li>
+      <li>
+        <time>Étape 2</time>
+        <h3>Structure et style</h3>
+        <p>Quatre pages HTML à la racine, une feuille de style, un fichier JavaScript. Les variables CSS
+        gèrent les couleurs, et le thème sombre suit le réglage du système.</p>
+      </li>
+      <li>
+        <time>Étape 3</time>
+        <h3>Navigation</h3>
+        <p>Un menu repliable sous 720 px, une barre horizontale au-dessus. Le bouton fait 44 px de haut
+        pour rester confortable au pouce, et le menu se referme tout seul après un clic.</p>
+      </li>
+      <li>
+        <time>Étape 4</time>
+        <h3>Images</h3>
+        <p>Six illustrations SVG générées pour l'occasion, plus un logo servant aussi de favicon.
+        Chacune porte un texte alternatif et des dimensions explicites pour éviter que la page saute
+        pendant le chargement.</p>
+      </li>
+      <li>
+        <time>Étape 5</time>
+        <h3>Publication</h3>
+        <p>Un workflow GitHub Actions envoie le contenu du dépôt vers GitHub Pages à chaque
+        <em>push</em>. Rien à compiler : les fichiers sont publiés tels quels.</p>
+      </li>
+    </ol>
+
+    <h2>La suite</h2>
+    <div class="note">
+      <p>Prochaines pistes : une page de contact, un fil d'actualités, et des vraies photos
+      redimensionnées avant d'être ajoutées au dépôt.</p>
+    </div>
+
+    <figure style="margin-top:24px">
+      <img src="assets/img/vue-05.svg" alt="Illustration abstraite : lagune turquoise sous un ciel sombre" width="1200" height="800" loading="lazy">
+      <figcaption>« Lagune », une des six illustrations de la galerie.</figcaption>
+    </figure>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Carnet de poche — site statique publié avec GitHub Pages.</p>
+    <p><a href="https://github.com/rafali/public-web-test">Code source sur GitHub</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/nav.js"></script>
+</body>
+</html>
