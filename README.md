@@ -16,10 +16,11 @@ Objectif : pouvoir tout écrire, modifier et publier depuis un téléphone.
 | `assets/img/` | Illustrations SVG et logo |
 | `.github/workflows/pages.yml` | Publication automatique |
 
-## Activer la publication (une seule fois)
+## Publication
 
-1. **Settings › Pages › Build and deployment › Source** : choisir **GitHub Actions**.
-2. Pousser sur la branche par défaut du dépôt : le workflow publie le site.
+Le workflow active GitHub Pages tout seul au premier déploiement
+(`enablement: true`). Si jamais ça échoue, l'activer à la main :
+**Settings › Pages › Build and deployment › Source** : choisir **GitHub Actions**.
 
 Le site est alors visible sur `https://rafali.github.io/public-web-test/`.
 
